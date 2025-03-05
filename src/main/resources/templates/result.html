@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Health Report</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        table {
+            width: 60%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            background: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 12px;
+            border: 1px solid #ddd;
+            text-align: left;
+        }
+        th {
+            background: #28a745;
+            color: white;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px;
+            font-size: 16px;
+            text-decoration: none;
+            color: white;
+            background: #007bff;
+            border-radius: 5px;
+        }
+        .btn:hover {
+            background: #0056b3;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Your Health Report</h2>
+
+    <table>
+        <tr>
+            <th>Parameter</th>
+            <th>Value</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>BMI</td>
+            <td th:text="${bmi}"></td>
+            <td th:text="${bmiStatus}"></td>
+        </tr>
+        <tr>
+            <td>Blood Pressure</td>
+            <td th:text="${bp}"></td>
+            <td th:text="${bpStatus}"></td>
+        </tr>
+        <tr>
+            <td>Sugar Level</td>
+            <td th:text="${sugar}"></td>
+            <td th:text="${sugarStatus}"></td>
+        </tr>
+        <tr>
+            <td>Diet Plan</td>
+            <td colspan="2" th:text="${dietPlan}"></td>
+        </tr>
+        
+        
+    </table>
+
+    <a href="/health-details" class="btn">Go Back</a>
+   
+
+</body>
+</html>
