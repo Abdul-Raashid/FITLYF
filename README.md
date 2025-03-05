@@ -1,2 +1,2 @@
 # FITLYF
-Fitlyf is a Spring Boot health monitoring system. It tracks BMI, blood pressure, and sugar levels, providing personalized diet recommendations and visual reports. Designed for user-friendly health management, it offers secure data storage and actionable insights.
+Fitlyf is a Spring Boot health monitoring system. It tracks BMI, blood pressure, and sugar levels, providing personalized diet recommendations and visual reports. Designed for user-friendly health management.
